@@ -1,0 +1,249 @@
+/* Bakgrunden bakom header och content */ 
+body {
+    background-color : #F2E8F2;
+    }
+
+    /* Utrymmet högst upp på hemsidan innan content börjar */ 
+header {
+    width : 1000px;
+    margin-left : auto;
+    margin-right : auto;
+    padding : 0 0 0 0;
+    height : 300px;
+    text-align : center;
+    margin-top:10px;
+}
+
+    /* Bilden i headern under menyn */ 
+#headerbild {
+    width : 1000px;
+    margin-top: 0px;
+    margin-left : 0px;
+    margin-right : auto;
+    padding : 0 0 0 0;
+    height : 300px;
+    margin:auto;    
+} 
+
+    /* Menyn högst upp på hemsidan med länkar */ 
+#menyett {
+    width : 1000px;
+    float: left;
+    list-style-type : none;
+    margin-top : 10px;
+    margin-bottom : 10px;
+    margin-right : 0;
+    margin-left : 0;
+    padding : 0;
+    overflow : hidden;
+    background-color : white;
+    box-shadow: 0 0 2px 1px rgb(0 0 0 / 0.5); /* Skugga runt "boxen" */
+    border-radius:0px;
+}
+
+   /* Vart meny1 ska vara, höger, vänster eller centrerat */ 
+#menyett li {
+    float : right;
+}
+
+    /* Typsnitt och storlek på meny1 */ 
+#menyett li a {
+    font-family : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size : 22px;
+    font-weight : bold;
+    text-align : left;
+    padding : 20px 20px 20px;
+    text-decoration : none;
+    color: black; 
+    -webkit-text-stroke: 0.5px white; /*Texten får en ramlinje*/
+}
+
+    /* Vad som händer när man tar pilen över meny1 text (just nu blir det vit bakgrund bara) */ 
+#menyett li a:hover {
+    background-color : white;
+}
+
+    /* Wrapper = storlek på hela sidan */ 
+#wrapper {
+    width : 1000px;
+    margin : 0 auto;
+    padding : 0 0 0;
+    vertical-align : middle;
+}
+
+    /* Content = Textinnehållet under headern */ 
+#content {
+    margin-left : auto;
+    margin-right : auto;
+    width : 950px;
+    background : #F2E8F2;
+    margin-top : 50px;
+    padding : 30px;
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align : left;
+    vertical-align : middle;
+    color: black;  
+    border-radius: 10px;
+}
+
+    /* Rubriker */ 
+h1 {
+    -webkit-text-stroke: 1px black;
+    font-family : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size : 44px;
+    font-weight : bold;
+    text-align : left;
+    margin-top : 20px;
+    padding-top: 0px;
+    margin-bottom : 0;
+    padding : 0;
+    color: white; 
+    text-shadow: 1px 1px #000000;
+}
+
+    /* Titlarna  */ 
+h2 {
+    -webkit-text-stroke: 1.5px black;
+    font-family : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size : 40px;
+    font-weight : bold;
+    margin-top : 20px;
+    margin-bottom : 0;
+    padding : 0;
+    color: white;
+}
+
+    /* Brödtexten */ 
+p {
+    font-family : Calibri;
+    font-size : 22px;
+    font-weight : normal;
+    color : black;
+    margin-top : 20px;
+    margin-bottom : 0;
+    padding : 0;
+}
+
+    /* Alla bilder på hemsidan */ 
+img {
+    border-radius : 1px;
+    padding : 0;
+    margin : 0;
+}
+
+    /* Vad som händer när man tar pilen på alla bilder,
+    just nu blir det lite transparenta och får skugga */ 
+img:hover {
+    box-shadow : 0 0 2px 1px rgb(0 140 186 / 0.5);
+    opacity : 0.5;
+}
+
+/* Placeringen för hemsidans innehåll. Asiden håller sig till höger och bild-länkarna
+ ligger som en kvadrat */
+.center {
+    display : block;
+    margin-left : auto;
+    margin-right : auto;
+    width : 50%;
+}
+    /* Asiden som ligger bredvid texten där bilder finns inuti*/
+aside {
+    width: 15%;
+    padding-left: .5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    float: right;
+    color: #29627e;
+}
+
+
+/* Radavstånd*/
+aside > p {
+    margin: .5rem;
+}
+
+/* Typsnitt på brödtext */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* Class för fetstil på text */
+.bold {
+    font-weight: bold;
+}
+
+/* Placering för hemsidans innehåll */
+.categories {
+    padding:10px;
+    border-radius:15px;
+}
+
+/* Skicka-knappen i kontaktformuläret */
+.button {
+    margin-top: 10px;
+    margin-left: 35.5%;
+    width: 120px;
+    height: 40px;
+    background-color: #222;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* "Kontakta oss"- rubriken */
+#kontakt{
+    margin-right: -17.5%;
+    float:right;
+}
+
+/* Bilden i H2-rubrikerna*/
+.image-clip {
+    line-height:1;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ZHYcjscDJrIWCmlfSmi41-uGiJxo0Sawa3YpxpNaEOaXgroO&s);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+/* Innehållet längst ner på hemsidan*/
+footer {  
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding-top: 20px; 
+}
+
+/* Sociala media-knappar */
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius:100%;
+}
+
+  /* Vad som händer när man trycker över socialmedia-knapparna */
+.fa:hover {
+    opacity: 0.7;
+} 
+
+  /* Välja färger för varje social media */ 
+
+  /* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    caret-color: white;
+}
+
+  /* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+  /* Snapchat */
+.fa-snapchat {
+    background: yellow;
+    color: white;
+}

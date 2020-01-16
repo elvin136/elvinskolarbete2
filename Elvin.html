@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Jag tog in jquery , jqueri-ui och jquery-ui css för datepicker-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Gruppens CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Min CSS -->
+    <link rel="stylesheet" href="elvin.css">
+</head>
+
+<body>
+    <!--Gridsystem för hela layouten-->
+    <div class="container">
+        <!--Meny för startsidan-->
+        <nav class="navbar" id="navbar">
+            <ul class="list">
+                <li><a href="index.html">Start</a> </li>
+                <li><a href="Emelia.html">Emelia</a> </li>
+                <li><a href="Elvin.html">ELVIN</a> </li>
+                <li><a href="Cajsa.html">Cajsa</a> </li>
+            </ul>
+            <img class="logga" src="images/M-sport.JPG" alt="logo">
+        </nav>
+
+        <!--Rubriken för hemsidan-->
+        <header id="header">
+            <h1 id="welcome">Välkommen till Elvins sida !!</h1>
+        </header>
+
+        <!--Aside för bilkategorierna-->
+        <aside class="aside" id="aside">
+            <h2>Bilar som finns att provköra</h2>        
+            <!--klass för bilder på kategorielsitan-->
+            <ul class="car-list">
+                <!--Bilderna är hämtade från hemsidorna nedan, har klistrat in länken-->
+                <li><a
+                        href="https://the-drive.imgix.net/https%3A%2F%2Fapi.thedrive.com%2Fwp-content%2Fuploads%2F2019%2F11%2FWebp.net-resizeimage-2019-11-05T104236.265.jpg%3Fquality%3D85?w=1440&auto=compress%2Cformat&ixlib=js-1.4.1&s=65ef04e4218ea624a329e96d9433e80b">BMW
+                        M2</a></li>
+                <li><a
+                        href="https://carsguide-res.cloudinary.com/image/upload/f_auto%2Cfl_lossy%2Cq_auto%2Ct_default/v1/editorial/2018-BMW-M3-CS-Coupe-Blue-Andrew-Chesterton-1200x800p-1.jpg">BMW
+                        M3</a></li>
+                <li><a href="https://tveassetsprod.blob.core.windows.net/editorial/2017/04/bmw-m4-cs-2018-01.jpg">BMW
+                        M4</a></li>
+                <li><a
+                        href="https://i0.wp.com/www.motoringresearch.com/wp-content/uploads/2017/12/2018_BMW_M5_G30_02.jpg?resize=1500%2C1000&ssl=1">BMW
+                        M5</a></li>
+                <li><a href="https://cdn.bmwblog.com/wp-content/uploads/2017/03/G-Power-BMW-M6-Convertible-1.jpg">BMW
+                        M6</a></li>
+            </ul>
+
+        </aside>
+
+        <!--klass för kontent/formulär-->
+        <main class="main">
+
+            <!--Rubrik-->
+            <h3><strong> Vill du provköra en av våra sportbilar? Fyll i formuläret nedan!</strong></h3>
+
+            <!--Klass för knappar/form -->
+            <div id="form-container">
+                <form>
+
+                    <label for="fname">Förnamn:</label>
+                    <input type="text" name="fname" class="input" id="fname" placeholder="Skriv in ditt förnamn:">
+                    <label for="lname">Efternamn:</label>
+                    <input type="text" name="lname" class="input" id="lname" placeholder="Skriv in ditt efternamn">
+                    <label for="email">E-post</label>
+                    <input type="email" name="email" class="input" id="email" placeholder="Skriv in din E-post">
+                </form>
+                <form>
+                    <label for="gender">Kön</label>
+                    <select name="gender" id="gender">
+                        <option value="male">Man</option>
+                        <option value="male">Kvinna</option>
+                        <option value="male">Annan</option>
+                    </select>
+
+                    <label for="age">Ålder</label>
+                    <input type="text" name="age" class="input" id="age" placeholder="Skriv in din ålder:">
+
+                    <label for="datepicker">Födelsedag:</label>
+                    <input type="number" name="birthday" id="datepicker" placeholder="åååå-mm-dd">
+                </form>
+            </div>
+            <form>
+                <input type="submit" name="sumbit" value="Skicka" class="btn-submit">
+            </form>
+        </main>
+
+        <!--Footer-->
+        <footer>
+            <p>Elvin &copy;2020</p>
+        </footer>
+
+    </div>
+    <!-- jquery fix för datum på födelsedag i formuläret-->
+    <script src="datepicker.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</body>
+
+</html>

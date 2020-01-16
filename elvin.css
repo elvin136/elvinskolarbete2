@@ -1,0 +1,240 @@
+/* Google font för att använda typsnitt*/
+
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Background på hela layouten */
+
+/*Bakrunden har ändrats*/
+
+body {
+    background-color: whitesmoke;
+}
+
+/*Grids system för layouten*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 'nav nav nav nav' 'header header header header' 'aside main main main' 'footer footer footer footer';
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/*container >* används för att selekta alla
+som ligger under container och lägger margin runt dem*/
+
+.container>* {
+    margin: 10px;
+}
+
+/*navbar, startmenyerna med gruppmedlemmar, css flex-box används*/
+
+.navbar {
+    background-color: #708090;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/*Listan till navbar*/
+
+.list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Mellanrum mellan kategorierna på navbar*/
+
+.list li {
+    padding: 30px;
+    margin-left: 10px;
+}
+
+/*Design för a taggen i navbar*/
+
+.list li a {
+    text-decoration: none;
+    font-size: 23px;
+    color: whitesmoke;
+    font-family: 'Anton', sans-serif;
+}
+
+/*Hover används för att ändra bakgrunden när man håller msuen över kategorierna*/
+
+.list li:hover {
+    background-color: #B0C4DE;
+}
+
+/*Loggan i navbar*/
+
+.navbar .logga {
+    width: 100px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+/*Rotera loggan*/
+
+.navbar .logga:hover {
+    transform: rotate(30deg);
+}
+
+/*Bilden med välkommen under navbar*/
+
+/*Ändrat height och width från gruppens css*/
+
+header {
+    grid-area: header;
+    background-image: url('./images/bmwm2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    border-radius: 10px;
+    width: 98.5%;
+}
+
+/*Välkommstext på headerbilden*/
+
+#welcome {
+    padding: 30px;
+    color: white;
+    text-shadow: 3px 3px #222;
+    font-family: 'Lobster', cursive;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*main används för formulär*/
+
+.main {
+    grid-area: main;
+    border-radius: 10px;
+    background-color: #DCDCDC;
+}
+
+/*Padding för rubriken på formuläret*/
+
+.main h3 {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+/*Padding left för rubriken i main*/
+
+.main p {
+    padding-left: 10px;
+}
+
+/*Det man skriver in i formulären*/
+
+#form-container {
+    border-radius: 5px;
+    background-color: #DCDCDC;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*Select för input och select i formuläret*/
+
+#form-container input, select {
+    width: 95%;
+    padding: 12px 20px;
+    background-color: #fff;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/*Används för att bara selekta input som har submit*/
+
+input[type=submit] {
+    width: 10%;
+    background-color: #696969;
+    color: white;
+    padding: 14px 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Färg för submit knappen när man håller musen över den*/
+
+.btn-submit:hover {
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+}
+
+/*Aside med lista, bilar*/
+
+/*Width har ändrats*/
+
+aside {
+    background-color: #C0C0C0;
+    grid-area: aside;
+    border-radius: 8px;
+    width: 90%;
+}
+
+/*Listan med bilar som ligger i aside*/
+
+.car-list {
+    list-style-type: none;
+    text-align: center;
+}
+
+/*Mellanrum mellan LI taggar/listan*/
+
+.car-list li {
+    padding: 10px;
+}
+
+/*Färgen ändras när man håller musen över kategorierna på listan*/
+
+.car-list li:hover {
+    background-color: #B0C4DE;
+}
+
+/*Design på texten i billistan*/
+
+.car-list li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+/*Footer*/
+
+/*Ändrat width och height*/
+
+footer {
+    background-color: #e1e1e1;
+    ;
+    grid-area: footer;
+    border-radius: 10px;
+    width: 98.5%;
+    height: 100px;
+}
+
+footer p {
+    font-size: 50px;
+    color: black;
+    margin-top: -2px;
+}
